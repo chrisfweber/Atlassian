@@ -1,0 +1,321 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Atlassian: The German Mittelstand Opportunity</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;900&display=swap" rel="stylesheet">
+    <style>
+        /* Custom Atlassian-themed Styles */
+        body {
+            font-family: 'Inter', sans-serif;
+            overflow: hidden;
+        }
+        .slide {
+            min-height: 100vh;
+            min-width: 100vw;
+            display: none;
+            animation: fadeIn 0.8s ease-in-out;
+        }
+        .slide.active {
+            display: flex;
+        }
+        @keyframes fadeIn {
+            from { opacity: 0; transform: scale(0.98); }
+            to { opacity: 1; transform: scale(1); }
+        }
+        .glass-card {
+            background: rgba(11, 31, 64, 0.4);
+            backdrop-filter: blur(12px);
+            -webkit-backdrop-filter: blur(12px);
+            border: 1px solid rgba(0, 82, 204, 0.3);
+        }
+        .highlight-blue {
+            color: #579DFF;
+        }
+        .bg-atlassian-blue {
+            background-color: #0052CC;
+        }
+        .bg-atlassian-gradient {
+            background-image: linear-gradient(135deg, #091E42 0%, #0052CC 100%);
+        }
+        
+        /* Animation styles */
+        .silo, .hub-circle {
+            transition: all 0.8s ease-in-out;
+        }
+        .connector-line {
+            stroke-dasharray: 200;
+            stroke-dashoffset: 200;
+            transition: stroke-dashoffset 1s ease-in-out;
+        }
+        .slide.active .connector-line {
+            stroke-dashoffset: 0;
+        }
+        .slide.active #hub {
+            transform: scale(1);
+            opacity: 1;
+            transition-delay: 0.5s;
+        }
+    </style>
+</head>
+<body class="bg-[#091E42] text-white">
+
+    <main id="presentation-container">
+
+        <section id="slide-1" class="slide active flex-col justify-center items-center p-8 text-center bg-atlassian-gradient">
+            <h2 class="text-2xl md:text-3xl font-bold text-blue-300 mb-4 tracking-wide">A Strategic Vision for Atlassian</h2>
+            <h1 class="text-5xl md:text-7xl font-black mb-12 max-w-4xl">Unlocking the Engine of Germany: A System of Work for the Mid-Market</h1>
+            <p class="text-xl text-blue-200">Powering the Established Mittelstand & High-Growth Startups.</p>
+        </section>
+
+        <section id="slide-2" class="slide flex-col justify-center items-center p-8">
+             <div class="max-w-6xl mx-auto w-full">
+                <h1 class="text-4xl md:text-6xl font-black mb-12 text-center">My Strategic Fit</h1>
+                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 text-left">
+                    <div class="glass-card rounded-2xl p-6">
+                        <h3 class="text-2xl font-bold mb-4 highlight-blue">My Journey & "Why"</h3>
+                        <p class="text-blue-200">My firsthand experience using Jira, Trello, and Loom showed me that Atlassian isn't just selling tools—it's building the foundational infrastructure for how modern companies operate. I've personally seen the power of shifting from separate silos to a unified System of Work, and I believe this transformation holds massive, long-term potential in the German market.</p>
+                    </div>
+                     <div class="glass-card rounded-2xl p-6">
+                        <h3 class="text-2xl font-bold mb-4 highlight-blue">My Conviction in Atlassian</h3>
+                         <ul class="space-y-3 text-blue-200 list-disc list-inside">
+                            <li><strong>Value Alignment:</strong> Atlassian's vision for the future of work, centered on collaboration and intelligence, deeply resonates with me.</li>
+                            <li><strong>The Opportunity:</strong> I'm excited by the strategic growth of the sales organization and the shift to proactive, outbound sales. It's the perfect mix of growth potential and product-market fit.</li>
+                            <li><strong>The Platform:</strong> Atlassian is the essential infrastructure for modern companies—the base layer for how people collaborate and achieve goals.</li>
+                        </ul>
+                    </div>
+                     <div class="glass-card rounded-2xl p-6">
+                        <h3 class="text-2xl font-bold mb-4 highlight-blue">Why Me: My Commitment</h3>
+                        <ul class="space-y-3 text-blue-200 list-disc list-inside">
+                            <li><strong>Proven Performer:</strong> I am a self-starter who has never missed a target (i.e. at Meta, Google, LinkedIn) and can execute on large, impactful projects.</li>
+                            <li><strong>Innovative Partner:</strong> I build relationships by delivering additional value, from my technical edge with AI to creative ideas like a Berlin customer roundtable at Meta.</li>
+                             <li><strong>Team Player:</strong> I thrive on collaboration and have a track record of onboarding and enabling new team members to succeed. I can do the day-to-day job while also driving strategic value for the team.</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="slide-3" class="slide flex-col justify-center items-center p-8">
+             <div class="max-w-6xl mx-auto w-full">
+                <h2 class="text-lg font-semibold text-blue-300 mb-2 tracking-widest">THE OPPORTUNITY</h2>
+                <h1 class="text-4xl md:text-6xl font-black mb-4">Germany's Mid-Market: A Powerhouse at a Crossroads</h1>
+                <p class="text-lg md:text-xl text-blue-200 max-w-4xl mb-12">
+                    The backbone of the German economy—from the revered Mittelstand to its burgeoning mid-sized startups—is facing unprecedented pressure to digitize. They need to innovate faster, improve efficiency, and connect their teams.
+                </p>
+                <div class="grid grid-cols-1 md:grid-cols-3 gap-6 text-center">
+                    <div class="glass-card rounded-2xl p-6">
+                        <h3 class="text-5xl font-black highlight-blue">>90%</h3>
+                        <p class="mt-2 text-blue-200">Of all German companies are part of the mid-market, forming the core of the economy.</p>
+                    </div>
+                     <div class="glass-card rounded-2xl p-6">
+                        <h3 class="text-5xl font-black highlight-blue">22%</h3>
+                        <p class="mt-2 text-blue-200">Projected annual growth (CAGR) for cloud computing in Germany through 2030. The shift is happening now.</p>
+                    </div>
+                     <div class="glass-card rounded-2xl p-6">
+                        <h3 class="text-5xl font-black highlight-blue">#1</h3>
+                        <p class="mt-2 text-blue-200">Challenge is digital transformation, requiring tools that foster agility and break down silos.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="slide-4" class="slide flex-col justify-center items-center p-8">
+            <div class="max-w-6xl mx-auto w-full text-center">
+                <h2 class="text-lg font-semibold text-blue-300 mb-2 tracking-widest">THE CHALLENGE</h2>
+                <h1 class="text-4xl md:text-6xl font-black mb-12">The Disconnected Reality of Work</h1>
+                <div class="relative h-80 flex justify-around items-center">
+                    <div class="silo text-center p-4">
+                        <div class="bg-blue-900/70 border border-blue-500 rounded-full w-32 h-32 flex flex-col justify-center items-center">
+                           <svg class="w-12 h-12 text-blue-300" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M17.25 6.75 22.5 12l-5.25 5.25m-10.5 0L1.5 12l5.25-5.25m7.5-3-4.5 12" /></svg>
+                           <p class="font-bold mt-2">Dev Teams</p>
+                        </div>
+                    </div>
+                    <div class="silo text-center p-4">
+                         <div class="bg-blue-900/70 border border-blue-500 rounded-full w-32 h-32 flex flex-col justify-center items-center">
+                           <svg class="w-12 h-12 text-blue-300" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M10.5 1.5H8.25A2.25 2.25 0 0 0 6 3.75v16.5a2.25 2.25 0 0 0 2.25 2.25h7.5A2.25 2.25 0 0 0 18 20.25V3.75a2.25 2.25 0 0 0-2.25-2.25H13.5m-3 0V3h3V1.5m-3 0h3m-3 18.75h3" /></svg>
+                           <p class="font-bold mt-2">IT Ops</p>
+                        </div>
+                    </div>
+                    <div class="silo text-center p-4">
+                         <div class="bg-blue-900/70 border border-blue-500 rounded-full w-32 h-32 flex flex-col justify-center items-center">
+                           <svg class="w-12 h-12 text-blue-300" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M2.25 18 9 11.25l4.306 4.306a11.95 11.95 0 0 1 5.814-5.518l2.74-1.22m0 0-5.94-2.281m5.94 2.28-2.28 5.941" /></svg>
+                           <p class="font-bold mt-2">Business</p>
+                        </div>
+                    </div>
+                </div>
+                <p class="text-lg md:text-xl text-blue-200 mt-12 max-w-3xl mx-auto">Siloed tools and fragmented processes create friction, slow down innovation, and prevent teams from achieving their full potential.</p>
+            </div>
+        </section>
+
+        <section id="slide-5" class="slide flex-col justify-center items-center p-8 bg-[#091E42]">
+             <div class="max-w-6xl mx-auto w-full text-center">
+                <h2 class="text-lg font-semibold text-blue-300 mb-2 tracking-widest">THE SOLUTION</h2>
+                <h1 class="text-4xl md:text-6xl font-black mb-12">From Silos to a System of Work</h1>
+                 <div class="relative h-96 w-full flex justify-center items-center">
+                    <div id="hub" class="hub-circle absolute bg-atlassian-blue rounded-full w-48 h-48 flex justify-center items-center opacity-0 scale-50 transition-all duration-700">
+                        <img src="https://play-lh.googleusercontent.com/JfxxN39GI3LUw0msNEcf7jZDBbhR_H2WZHq1axYLyB2GHyckWfwC0ls9GR9d3VWc7LQ" class="w-24 h-24 rounded-3xl" alt="Atlassian Logo"/>
+                    </div>
+                    
+                    <div class="silo absolute" style="top: 50%; left: 15%; transform: translate(-50%, -50%);">
+                        <div class="bg-blue-900/70 border border-blue-500 rounded-full w-32 h-32 flex flex-col justify-center items-center">
+                           <svg class="w-12 h-12 text-blue-300" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M17.25 6.75 22.5 12l-5.25 5.25m-10.5 0L1.5 12l5.25-5.25m7.5-3-4.5 12" /></svg>
+                           <p class="font-bold mt-2">Dev Teams</p>
+                        </div>
+                    </div>
+                    <div class="silo absolute" style="top: 10%; left: 50%; transform: translate(-50%, -50%);">
+                         <div class="bg-blue-900/70 border border-blue-500 rounded-full w-32 h-32 flex flex-col justify-center items-center">
+                           <svg class="w-12 h-12 text-blue-300" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M10.5 1.5H8.25A2.25 2.25 0 0 0 6 3.75v16.5a2.25 2.25 0 0 0 2.25 2.25h7.5A2.25 2.25 0 0 0 18 20.25V3.75a2.25 2.25 0 0 0-2.25-2.25H13.5m-3 0V3h3V1.5m-3 0h3m-3 18.75h3" /></svg>
+                           <p class="font-bold mt-2">IT Ops</p>
+                        </div>
+                    </div>
+                    <div class="silo absolute" style="top: 50%; left: 85%; transform: translate(-50%, -50%);">
+                         <div class="bg-blue-900/70 border border-blue-500 rounded-full w-32 h-32 flex flex-col justify-center items-center">
+                           <svg class="w-12 h-12 text-blue-300" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M2.25 18 9 11.25l4.306 4.306a11.95 11.95 0 0 1 5.814-5.518l2.74-1.22m0 0-5.94-2.281m5.94 2.28-2.28 5.941" /></svg>
+                           <p class="font-bold mt-2">Business</p>
+                        </div>
+                    </div>
+
+                    <svg class="absolute w-full h-full" viewbox="0 0 400 240">
+                        <line class="connector-line" x1="85" y1="120" x2="170" y2="120" stroke="#579DFF" stroke-width="2"/>
+                        <line class="connector-line" x1="200" y1="55" x2="200" y2="95" stroke="#579DFF" stroke-width="2"/>
+                        <line class="connector-line" x1="315" y1="120" x2="230" y2="120" stroke="#579DFF" stroke-width="2"/>
+                    </svg>
+                </div>
+                <p class="text-lg md:text-xl text-blue-200 mt-4 max-w-3xl mx-auto">Atlassian connects every team on a single, integrated platform. By breaking down silos with our cloud products, we create a unified system that unlocks institutional knowledge and accelerates work across the entire organization.</p>
+            </div>
+        </section>
+
+        <section id="slide-6" class="slide flex-col justify-center items-center p-8">
+            <div class="max-w-6xl mx-auto w-full">
+                <h2 class="text-lg font-semibold text-blue-300 mb-2 tracking-widest text-center">GROWTH ACCELERATORS</h2>
+                <h1 class="text-4xl md:text-6xl font-black mb-12 text-center">The Connected Atlassian Ecosystem</h1>
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                    <div class="glass-card rounded-2xl p-6">
+                        <h3 class="text-2xl font-bold mb-3 highlight-blue">Unified Platform on Cloud</h3>
+                        <p class="text-blue-200">The cloud is the foundation. It connects every tool—Jira, Confluence, Trello, Loom—into one seamless experience, creating a single source of truth and eliminating versioning conflicts.</p>
+                    </div>
+                    <div class="glass-card rounded-2xl p-6">
+                        <h3 class="text-2xl font-bold mb-3 highlight-blue">High-Velocity ITSM & ESM</h3>
+                        <p class="text-blue-200">Jira Service Management empowers not just IT, but every business team (HR, Legal, Finance) to manage requests, streamline workflows, and deliver exceptional service.</p>
+                    </div>
+                    <div class="glass-card rounded-2xl p-6 col-span-1 md:col-span-2">
+                        <h3 class="text-2xl font-bold mb-3 highlight-blue">The AI Fabric: Atlassian Intelligence</h3>
+                        <p class="text-blue-200">Our new AI capabilities act as an intelligent layer across the entire platform, transforming how work gets done:</p>
+                        <ul class="mt-4 space-y-2 text-lg">
+                            <li class="flex items-start"><span class="font-bold text-blue-300 mr-2">→</span> A Loom video of a meeting is automatically summarized, with action items and owners assigned in Jira.</li>
+                            <li class="flex items-start"><span class="font-bold text-blue-300 mr-2">→</span> AI can instantly generate test plans for new features in Jira based on the product requirements in Confluence.</li>
+                             <li class="flex items-start"><span class="font-bold text-blue-300 mr-2">→</span> Any employee can ask a question in natural language and get answers synthesized from across all projects and spaces.</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="slide-7" class="slide flex-col justify-center items-center p-8 text-center bg-atlassian-gradient">
+            <h2 class="text-2xl md:text-3xl font-bold text-blue-300 mb-4 tracking-wide">THE VISION</h2>
+            <h1 class="text-5xl md:text-7xl font-black mb-12 max-w-4xl">More Than a Vendor: A Strategic Partner</h1>
+            <p class="text-xl text-blue-200 max-w-3xl">Our mission is to provide Germany's entire mid-market, from the Mittelstand to its future champions, with the definitive System of Work, empowering the nation's economic engine to thrive in the digital age.</p>
+        </section>
+
+        <section id="slide-8" class="slide flex-col justify-center items-center p-8">
+            <div class="max-w-4xl mx-auto w-full">
+                <h2 class="text-lg font-semibold text-blue-300 mb-2 tracking-widest">APPENDIX</h2>
+                <h1 class="text-4xl md:text-6xl font-black mb-12">Data Sources</h1>
+                <ul class="space-y-4 text-blue-200 list-disc list-inside">
+                    <li>
+                        <span class="font-semibold">Mid-Market Company Share (>90%):</span> German Federal Ministry for Economic Affairs and Energy (BMWi).
+                    </li>
+                    <li>
+                        <span class="font-semibold">Cloud Computing CAGR (22%):</span> Grand View Research, "Germany Cloud Computing Market Size & Outlook, 2024-2030".
+                    </li>
+                    <li>
+                        <span class="font-semibold">Digital Transformation Challenge:</span> Analysis based on Germany's "High-Tech Strategy 2025" and reports from leading economic institutes on structural challenges for German businesses.
+                    </li>
+                     <li>
+                        <span class="font-semibold">Atlassian Product Capabilities:</span> Atlassian.com, including official documentation for Atlassian Intelligence, Jira, Confluence, and Loom integrations.
+                    </li>
+                </ul>
+            </div>
+        </section>
+
+    </main>
+
+    <div class="fixed bottom-6 right-8 flex items-center gap-4 z-20">
+        <div class="flex gap-3">
+            <button id="prev-btn" class="bg-blue-900/50 border border-blue-500/50 rounded-full p-3 hover:bg-blue-800/70 transition-colors disabled:opacity-50 disabled:cursor-not-allowed">
+                <svg class="w-6 h-6" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M10.5 19.5 3 12m0 0 7.5-7.5M3 12h18" /></svg>
+            </button>
+            <button id="next-btn" class="bg-blue-900/50 border border-blue-500/50 rounded-full p-3 hover:bg-blue-800/70 transition-colors">
+                <svg class="w-6 h-6" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M13.5 4.5 21 12m0 0-7.5 7.5M21 12H3" /></svg>
+            </button>
+        </div>
+        <img 
+            src="https://play-lh.googleusercontent.com/JfxxN39GI3LUw0msNEcf7jZDBbhR_H2WZHq1axYLyB2GHyckWfwC0ls9GR9d3VWc7LQ" 
+            alt="Atlassian logo" 
+            class="w-12 h-12 rounded-lg"
+            onerror="this.style.display='none'"
+        >
+    </div>
+
+    <div id="indicators" class="fixed bottom-8 left-1/2 -translate-x-1/2 flex gap-2 z-20"></div>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            const slides = document.querySelectorAll('.slide');
+            const prevBtn = document.getElementById('prev-btn');
+            const nextBtn = document.getElementById('next-btn');
+            const indicatorsContainer = document.getElementById('indicators');
+            let currentSlide = 0;
+            const totalSlides = slides.length;
+
+            function createIndicators() {
+                for (let i = 0; i < totalSlides; i++) {
+                    const indicator = document.createElement('button');
+                    indicator.className = 'w-2.5 h-2.5 rounded-full bg-blue-500/40 transition-all duration-300';
+                    indicator.dataset.index = i;
+                    indicator.addEventListener('click', () => goToSlide(parseInt(indicator.dataset.index)));
+                    indicatorsContainer.appendChild(indicator);
+                }
+            }
+
+            function updateUI() {
+                slides.forEach((slide, index) => {
+                    slide.classList.toggle('active', index === currentSlide);
+                });
+                
+                const indicators = document.querySelectorAll('#indicators button');
+                indicators.forEach((indicator, index) => {
+                    indicator.classList.toggle('bg-blue-400', index === currentSlide);
+                    indicator.classList.toggle('w-5', index === currentSlide);
+                });
+
+                prevBtn.disabled = currentSlide === 0;
+                nextBtn.disabled = currentSlide === totalSlides - 1;
+            }
+
+            function goToSlide(slideIndex) {
+                currentSlide = Math.max(0, Math.min(totalSlides - 1, slideIndex));
+                updateUI();
+            }
+
+            const showNextSlide = () => goToSlide(currentSlide + 1);
+            const showPrevSlide = () => goToSlide(currentSlide - 1);
+            
+            function handleKeydown(e) {
+                if (e.key === 'ArrowRight' || e.key === ' ') showNextSlide();
+                else if (e.key === 'ArrowLeft') showPrevSlide();
+            }
+
+            prevBtn.addEventListener('click', showPrevSlide);
+            nextBtn.addEventListener('click', showNextSlide);
+            document.addEventListener('keydown', handleKeydown);
+            
+            createIndicators();
+            updateUI(); 
+        });
+    </script>
+</body>
+</html>
